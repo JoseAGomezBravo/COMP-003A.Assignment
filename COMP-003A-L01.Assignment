@@ -1,0 +1,74 @@
+/*
+ * Author: Jose Angel Gomez Bravo
+ * Course: COMP-003A-L01
+ * Purpose: Complete the assignment by replicating the output, therefore showing our understanding of the basics.
+ */
+namespace COMP003A.Assignment2_;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("**************************");
+        Console.WriteLine("Console Section");
+        Console.WriteLine("**************************");
+
+
+        Console.Title = "COMP-003A - Assignment";
+        Console.BackgroundColor = ConsoleColor.Blue;
+        Console.ForegroundColor = ConsoleColor.White;
+
+
+        Console.WriteLine("**************************");
+        Console.WriteLine("String Section");
+        Console.WriteLine("**************************");
+
+
+        Console.Write("Enter First Name: ");
+        string firstName = Console.ReadLine();
+        Console.Write("Enter MIddle Name: ");
+        string middleName = Console.ReadLine();
+        Console.Write("Enter Last Name: ");
+        string lastName = Console.ReadLine();
+
+
+        Console.Write("Enter age in 2023: ");
+        string inputAge = Console.ReadLine();
+        int inputAGe = Convert.ToInt32(inputAge);
+        int yearBorn = 2023 - Convert.ToInt32(inputAge);
+        Console.WriteLine($"Hello, {firstName} {middleName} {lastName}. You were born in {yearBorn}.");
+
+
+        Console.WriteLine("*************************");
+        Console.WriteLine("Math Section");
+        Console.WriteLine("*************************");
+
+
+        Console.Write("Enter an integer for integer1: ");
+        string integeR1 = Console.ReadLine();
+        int integer1 = Convert.ToInt32(integeR1);
+        Console.Write("Enter an integer for integer2: ");
+        string integeR2 = Console.ReadLine();
+        int integer2 = Convert.ToInt32(integeR2);
+
+
+        Console.WriteLine($"{integer1} + {integer2} = {integer1 + integer2}");
+        Console.WriteLine($"{integer1} - {integer2} = {integer1 - integer2}");
+        Console.WriteLine($"{integer1} * {integer2} = {integer1 * integer2}");
+        Console.WriteLine($"{integer1} / {integer2} = {integer1 / integer2}");
+        Console.WriteLine($"{integer1} % {integer2} = {integer1 % integer2}");
+
+
+        Console.WriteLine("*************************");
+        Console.WriteLine("Circle Area & Circumference Caculator Section");
+        Console.WriteLine("*************************");
+
+
+        Console.Write("Enter radius: ");
+        double radius = Convert.ToDouble(Console.ReadLine());
+        double area = Math.PI * Math.Pow(radius, 2);
+        double circumference = 2 * Math.PI * radius;
+        Console.WriteLine($"The area is {area}");
+        Console.WriteLine($"The circumference is {circumference}");
+    }
+}
+
